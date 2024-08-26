@@ -1,0 +1,2 @@
+
+return<d>{<id1>{$tuple/tuple/*/tuple/*/id1/*}</id1>,<id2>{$tuple/tuple/*/tuple/*/id2/*}</id2>}</d>

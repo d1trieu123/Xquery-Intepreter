@@ -1,0 +1,50 @@
+for $tuple in join (join (join (for $d1 in doc("large-data.xml")/data/d,
+$id1 in $d1/id/text(),
+$a1 in $d1/a1/text()
+
+return <tuple>
+	<d1> {$d1} </d1>,
+	<id1> {$id1} </id1>,
+	<a1> {$a1} </a1>
+</tuple>
+
+,for $d2 in doc("large-data.xml")/data/d,
+$id2 in $d2/id/text(),
+$a2 in $d2/a6/text()
+
+return <tuple>
+	<d2> {$d2} </d2>,
+	<id2> {$id2} </id2>,
+	<a2> {$a2} </a2>
+</tuple>
+
+,[a1], [a2]
+)
+,for $d3 in doc("large-data.xml")/data/d,
+$id3 in $d3/id/text(),
+$a3 in $d3/a2/text()
+
+return <tuple>
+	<d3> {$d3} </d3>,
+	<id3> {$id3} </id3>,
+	<a3> {$a3} </a3>
+</tuple>
+
+,[a1], [a3]
+)
+,for $d4 in doc("large-data.xml")/data/d,
+$id4 in $d4/id/text(),
+$a4 in $d4/a5/text()
+
+return <tuple>
+	<d4> {$d4} </d4>,
+	<id4> {$id4} </id4>,
+	<a4> {$a4} </a4>
+</tuple>
+
+,[a3], [a4]
+)
+return<d>{<id1>{$tuple/id1/*}</id1>,
+<id2>{$tuple/id2/*}</id2>,
+<id3>{$tuple/id3/*}</id3>,
+<id4>{$tuple/id4/*}</id4>}</d>
