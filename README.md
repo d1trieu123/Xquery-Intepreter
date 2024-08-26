@@ -4,7 +4,7 @@
 
 **XQuery Interpreter** is a custom-built software tool designed to parse and execute XQuery expressions on XML documents. This project was developed as part of a course on database management and data query languages, where the primary goal was to create a functional interpreter capable of handling complex XQuery operations.
 
-Built using Java and ANTLR, the interpreter provides a robust environment for querying XML data. It features an XPath interpreter that is extended to support full XQuery functionality, including the ability to handle nested queries, FLWOR expressions, and various join operations to optimize query performance. Additionally, the project implements advanced query optimization techniques to enhance efficiency, especially in handling large XML datasets.
+Built using Java and ANTLR, the interpreter provides a robust environment for querying XML data. It features an XPath interpreter that is extended to support full XQuery functionality, including the ability to handle nested queries, FLWR expressions, and various join operations to optimize query performance. Additionally, the project implements advanced query optimization techniques to enhance efficiency, especially in handling large XML datasets.
 
 Key features of the **XQuery Interpreter** include:
 - **XPath and XQuery Parsing**: Supports a comprehensive set of XPath and XQuery expressions.
